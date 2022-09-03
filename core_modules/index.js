@@ -4,6 +4,12 @@ const http = require("http");
 //   console.log(`the server is running on port 5000`);
 // });
 
-console.log(http)
+const server = http.createServer((req, res) => {
+  res.end("Hello Node Js");
+  console.log(`contected to the server`);
+});
 
-server.listen(5000);
+const port = 5000;
+console.log('the server is running at 500')
+
+server.listen(port);
